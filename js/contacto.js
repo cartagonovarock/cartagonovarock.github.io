@@ -48,9 +48,8 @@ function sendMessage(headers_obj, message, callback)
 {
   var email = '';
   for(var header in headers_obj)
-    console.log(header);
     email += header += ": "+headers_obj[header]+"\r\n";
-
+    console.log(email);
   email += "\r\n" + message;
   if (gapi.client.gmail === undefined) {
       $('#modal2').openModal();
@@ -92,14 +91,14 @@ $("form").submit(function(event) {
   form.forEach(function(item){
     if (item.name === "nombre") {
           subject1.Subject = "Cartagonova Contacto";
-          subject1.To = "mariobarrpach@gmail.com";
-          mensaje1 = "Hola " + item.value + "Hemos recibido tu mensaje, pronto nos pondremos en contacto contigo.";
+          subject1.To = "info.cartagonovarock@gmail.com";
+          mensaje2 = "Hola " + item.value + " Hemos recibido tu mensaje, pronto nos pondremos en contacto contigo.";
     }else if (item.name === "asunto") {
         subject2.Subject = item.value;
     }else if (item.name === "email") {
         subject2.to = item.value;
     }else if (item.name === "mensaje"){
-        mensaje2 = item.value;
+        mensaje1 = item.value;
     }
   });
   sendMessage(subject1, mensaje1, enviado);
