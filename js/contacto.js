@@ -31,11 +31,9 @@ function handleAuthClick() {
 }
 
 function handleAuthResult(authResult) {
-  console.log(authResult);
   if(authResult && !authResult.error) {
     loadGmailApi();
   } else {
-    console.log("entroo");
     $('#modal2').openModal();
     handleAuthClick();
   }
@@ -49,19 +47,22 @@ function loadGmailApi() {
 function sendMessage(headers_obj, message, callback)
 {
   var email = '';
-  console.log(headers_obj);
   for(var header in headers_obj)
     console.log(header);
     email += header += ": "+headers_obj[header]+"\r\n";
 
   email += "\r\n" + message;
-  var sendRequest = gapi.client.gmail.users.messages.send({
-    'userId': 'me',
-    'resource': {
-      'raw': window.btoa(email).replace(/\+/g, '-').replace(/\//g, '_')
-    }
-  });
-  return sendRequest.execute(callback);
+  if (gapi.client.gmail === undefined) {
+      $('#modal2').openModal();
+  }else {
+    var sendRequest = gapi.client.gmail.users.messages.send({
+      'userId': 'me',
+      'resource': {
+        'raw': window.btoa(email).replace(/\+/g, '-').replace(/\//g, '_')
+      }
+    });
+    return sendRequest.execute(callback);
+  }
 }
 
 //Funcion para abrir modal cuando se envie el mensaje
