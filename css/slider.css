@@ -64,6 +64,13 @@
     background-size: cover;
 }
 
+.fondo-5 {
+  	background: #0b0c0e;
+    background-image: url(../media/img/cabezotes/video1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 .link {
 	outline: none;
