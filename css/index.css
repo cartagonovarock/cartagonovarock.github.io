@@ -1,0 +1,592 @@
+html{
+  font-family: 'Rubik', sans-serif !important;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.brand-logo{
+  padding: 0px 35px !important;
+  margin-top: 20px;
+}
+
+.font-bold{
+  font-weight: bold;
+}
+
+.fondo{
+  background-image: url('../media/img/DSC03995.JPG');
+  background-position: center center;
+  /* La imagen de fondo no se repite */
+  background-repeat: no-repeat;
+  /* La imagen de fondo está fija en el viewport, de modo que no se mueva cuando la altura del contenido supere la altura de la imagen. */
+  /*background-attachment: fixed;*/
+  /* La imagen de fondo se reescala cuando se cambia el ancho de ventana del navegador */
+  background-size: cover;
+}
+
+/*
+  Esta linea es la que permite que en la seccion de bienvenidos se vean las lineas laterales
+  fuente: https://css-tricks.com/stripes-css/
+*/
+.fondo-lineal{
+  margin-top: -20px;
+  border-style: solid;
+  border-color:#010100;
+  border-width: 6px;
+  background: repeating-linear-gradient(
+    -45deg,
+    #010100 ,
+    #010100 6px,
+    #ffab00  5px,
+    #ffab00  30px
+  );
+}
+
+.fondo-lineal-2{
+  margin-top: -20px;
+  border-style: solid;
+  border-color:#010100;
+  border-width: 6px;
+  background: repeating-linear-gradient(
+    -45deg,
+    #010100 ,
+    #010100 6px,
+    #e53935  5px,
+    #e53935  30px
+  );
+}
+
+.bienvenidos{
+  background-color: #ededed;
+  border-style: solid;
+  border-color:#000;
+  border-width: 5px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 6vw;
+  padding: 0 35px;
+  margin-bottom: 0px;
+  color: #000
+}
+
+.banda{
+  background-color: #ededed;
+  border-style: solid;
+  border-color:#000;
+  border-width: 5px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 6vw;
+  padding: 0 35px;
+  margin-bottom: 0px;
+  color: #000
+}
+
+.uppercase{
+    text-transform: uppercase;
+    font-size: 3vw;
+}
+
+.pa-25-justify {
+    padding: 25px;
+    text-align: justify;
+}
+
+.pd-25{
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pd-0{
+  padding: 0px !important;
+}
+
+.card-border{
+  border-style: solid;
+  border-color: #010100;
+  border-width: 6px;
+}
+
+.modal-border{
+  border-style: solid;
+  border-color: #fff;
+  border-width: 6px;
+}
+
+.modal-border .modal-content, .modal-border .modal-footer{
+  background-color: #000;
+}
+
+.border-dropdown{
+  border: 3px solid #000;
+}
+
+.footer-border{
+  border-style: solid;
+  border-color: #fff;
+  border-width: 6px;
+  padding: 20px;
+  height: 100% !important;
+  font-size: 1vw;
+  font-weight: bold !important;
+}
+
+.nav-border{
+  border-style: solid;
+  border-color: #010100;
+  border-width: 6px;
+  padding-bottom: 93px;
+  padding-top: 20px;
+}
+
+.button-collapse{
+  margin-top: 5px;
+}
+
+.card-fondo{
+  background-color: #ededed !important;
+}
+
+/*
+    Esta linea incrementa el tiempo de la animacion
+*/
+.element-to-animate{
+  -vendor-animation-duration: 9s;
+  -vendor-animation-delay: 6s;
+  -vendor-animation-iteration-count: infinite;
+}
+
+
+/*
+En esta seccion se hace el efecto de hover del menu
+Fuente: https://github.com/codrops/LineMenuStyles/
+*/
+.menu {
+	line-height: 1;
+	margin: 0 auto 3em;
+}
+
+.menu__list {
+	position: relative;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.menu__item {
+	display: block;
+	margin: 1em 0;
+}
+
+.menu__link {
+	font-size: 1.05em;
+	font-weight: bold;
+	display: block;
+	padding: 1em;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-touch-callout: none;
+	-khtml-user-select: none;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.menu-principal  .menu__item {
+	position: relative;
+	margin: 1em;
+}
+
+.menu-principal  .menu__link {
+	position: relative;
+	display: block;
+	min-width: 110px;
+	text-align: center;
+	color: #b5b5b5;
+	-webkit-transition: color 0.2s;
+	transition: color 0.2s;
+}
+
+
+.menu-principal  .active .menu__link {
+	color: #010100;
+	-webkit-transition-duration: 0.4s;
+	transition-duration: 0.4s;
+}
+
+.menu-principal  .menu__item::before,
+.menu-principal  .menu__item::after,
+.menu-principal  .menu__link::before,
+.menu-principal  .menu__link::after {
+	content: '';
+	position: absolute;
+	background: #010100;
+	-webkit-transition: -webkit-transform 0.2s;
+	transition: transform 0.2s;
+}
+
+.menu-principal  .menu__item::before,
+.menu-principal  .menu__item::after {
+	top: 0;
+	width: 4px;
+	height: 100%;
+	-webkit-transform: scale3d(1, 0, 1);
+	transform: scale3d(1, 0, 1);
+}
+
+.menu-principal  .menu__item::before {
+	left: 0;
+	-webkit-transform-origin: 50% 100%;
+	transform-origin: 50% 100%;
+}
+
+.menu-principal  .menu__item::after {
+	right: 0;
+	-webkit-transform-origin: 50% 0%;
+	transform-origin: 50% 0%;
+}
+
+.menu-principal  .menu__link::before,
+.menu-principal  .menu__link::after {
+	left: 0;
+	width: 100%;
+	height: 4px;
+	-webkit-transform: scale3d(0, 1, 1);
+	transform: scale3d(0, 1, 1);
+}
+
+.menu-principal  .menu__link::before {
+	top: 0;
+	-webkit-transform-origin: 0 50%;
+	transform-origin: 0 50%;
+}
+
+.menu-principal  .menu__link::after {
+	bottom: 0;
+	-webkit-transform-origin: 100% 50%;
+	transform-origin: 100% 50%;
+}
+
+.menu-principal  .active::before,
+.menu-principal  .active::after,
+.menu-principal  .active .menu__link::before,
+.menu-principal  .active .menu__link::after {
+	-webkit-transform: scale3d(1, 1, 1);
+	transform: scale3d(1, 1, 1);
+	-webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	-webkit-transition-duration: 0.4s;
+	transition-duration: 0.4s;
+}
+
+.menu-principal  .active::after {
+	-webkit-transition-delay: 0s;
+	transition-delay: 0s;
+}
+
+.menu-principal  .active .menu__link::before  {
+	-webkit-transition-delay: 0.2s;
+	transition-delay: 0.2s;
+}
+
+.menu-principal  .active .menu__link::after {
+	-webkit-transition-delay: 0.2s;
+	transition-delay: 0.2s;
+}
+
+
+.menu-principal  .menu__item:hover:before,
+.menu-principal  .menu__item:hover:after,
+.menu-principal  .menu__item .menu__link:hover:before,
+.menu-principal  .menu__item .menu__link:hover:after{
+    color: red !important;
+  	-webkit-transform: scale3d(1, 1, 1);
+  	transform: scale3d(1, 1, 1);
+  	-webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  	-webkit-transition-duration: 0.4s;
+  	transition-duration: 0.4s;
+}
+
+.menu-principal  .menu__item:hover:after {
+	-webkit-transition-delay: 0s;
+	transition-delay: 0s;
+}
+
+.menu-principal  .menu__item .menu__link:hover:before  {
+	-webkit-transition-delay: 0.2s;
+	transition-delay: 0.2s;
+}
+
+.menu-principal  .menu__item .menu__link:hover:after {
+	-webkit-transition-delay: 0.2s;
+	transition-delay: 0.2s;
+}
+
+
+nav ul li.active {
+  background-color: transparent !important;
+}
+
+.side-nav .collapsible-body li.active a{
+  color: #e53935;
+}
+
+
+/*
+Card
+*/
+
+.card-container {
+  -webkit-perspective: 800px;
+  -moz-perspective: 800px;
+  -o-perspective: 800px;
+  perspective: 800px;
+  margin-bottom: 30px;
+}
+.card-container:hover .card, .card-container.hover .card {
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+.card-container.static:hover .card, .card-container.static.hover .card {
+  -webkit-transform: none;
+  -moz-transform: none;
+  -o-transform: none;
+  transform: none;
+}
+
+/* flip the pane when hovered */
+/* flip speed goes here */
+.card {
+  -webkit-transition: -webkit-transform 0.5s;
+  -moz-transition: -moz-transform 0.5s;
+  -o-transition: -o-transform 0.5s;
+  transition: transform 0.5s;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #FFF;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.14);
+}
+
+/* front pane, placed above back */
+
+/* back, initially hidden pane */
+.back {
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+/*        Style */
+.card {
+  background: none repeat scroll 0 0 #FFFFFF;
+  border-radius: 4px;
+  color: #444444;
+}
+
+.card-container, .front, .back {
+  width: 100%;
+  height: 360px;
+  border-radius: 4px;
+}
+
+.card .cover {
+  height: 150px;
+  overflow: hidden;
+  border-radius: 4px 4px 0 0;
+  /*background: repeating-linear-gradient( -45deg, #010100 , #010100 6px, #e0e0e0 5px, #e0e0e0 30px );*/
+}
+
+
+.card .cover img {
+  width: 100%;
+}
+.card .user {
+  border-radius: 50%;
+  display: block;
+  height: 120px;
+  margin: -55px auto 0;
+  overflow: hidden;
+  width: 120px;
+}
+.card .user img {
+  background: none repeat scroll 0 0 #FFFFFF;
+  border: 4px solid #FFFFFF;
+  width: 100%;
+}
+.card .content {
+  background-color: transparent;
+  box-shadow: none;
+  padding: 10px 20px 20px;
+}
+.card .content .main {
+  min-height: 160px;
+}
+.card .back .content .main {
+  height: 215px;
+}
+.card .name {
+  font-size: 22px;
+  line-height: 28px;
+  margin: 10px 0 0;
+  text-align: center;
+  text-transform: capitalize;
+}
+.card h5 {
+  margin: 5px 0;
+  font-weight: 400;
+  line-height: 20px;
+  font-size: 14px;
+}
+
+.card .profession {
+  color: #999999;
+  text-align: center;
+  margin-bottom: 20px;
+  margin: 0 0 10px;
+}
+
+.card .footer {
+  border-top: 1px solid #EEEEEE;
+  color: #999999;
+  margin: -40px 0 0;
+  padding: 10px 0 0;
+  text-align: center;
+}
+.card .footer .social-links {
+  font-size: 18px;
+}
+.card .footer .social-links a {
+  margin: 0 7px;
+}
+.card .header {
+  padding: 15px 20px;
+  height: 90px;
+}
+.card .motto {
+  border-bottom: 1px solid #EEEEEE;
+  color: #999999;
+  font-size: 14px;
+  font-weight: 400;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+/*      Just for presentation */
+.title {
+  color: #506A85;
+  text-align: center;
+  font-weight: 300;
+  font-size: 44px;
+  margin-bottom: 90px;
+  line-height: 90%;
+}
+.title small {
+  font-size: 17px;
+  color: #999;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.space-50 {
+  height: 50px;
+  display: block;
+}
+
+.space-200 {
+  height: 200px;
+  display: block;
+}
+
+.white-board {
+  background-color: #FFFFFF;
+  min-height: 200px;
+  padding: 60px 60px 20px;
+}
+
+.ct-heart {
+  color: #F74933;
+}
+
+pre.prettyprint {
+  background-color: #ffffff;
+  border: 1px solid #999;
+  margin-top: 20px;
+  padding: 20px;
+  text-align: left;
+}
+
+.atv, .str {
+  color: #05AE0E;
+}
+
+.tag, .pln, .kwd {
+  color: #3472F7;
+}
+
+.atn {
+  color: #2C93FF;
+}
+
+.pln {
+  color: #333;
+}
+
+.com {
+  color: #999;
+}
+
+.img-circle{
+  border-radius: 50%;
+}
+
+.main p{
+  margin: 0 0 10px;
+}
+
+.main h4{
+  font-size: 1.28rem !important;
+}
+
+#dropdown2{
+  width: 124px !important;
+}
+
+.preloader{
+  position: fixed;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  background-color: white;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+}

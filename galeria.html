@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!--Import Google Icon Font-->
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css"  media="screen,projection"/>
+		<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.3.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/demo.css" >
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="css/menu.css">
+    <link rel="stylesheet" type="text/css" href="css/slider.css">
+    <link rel="stylesheet" type="text/css" href="css/galeria.css">
+    <link rel="shortcut icon" href="media/img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="media/img/favicon.ico" type="image/x-icon">
+    <script type="text/javascript" src="js/modernizr-custom.js"></script>
+    <title>Galeria</title>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+
+  <body>
+  <div id="preload" class="preloader">
+       <div class="preloader-wrapper big active">
+        <div class="spinner-layer spinner-blue">
+          <div class="circle-clipper left">
+            <div class="circle"></div>
+          </div><div class="gap-patch">
+            <div class="circle"></div>
+          </div><div class="circle-clipper right">
+            <div class="circle"></div>
+          </div>
+        </div>
+
+        <div class="spinner-layer spinner-red">
+          <div class="circle-clipper left">
+            <div class="circle"></div>
+          </div><div class="gap-patch">
+            <div class="circle"></div>
+          </div><div class="circle-clipper right">
+            <div class="circle"></div>
+          </div>
+        </div>
+
+        <div class="spinner-layer spinner-yellow">
+          <div class="circle-clipper left">
+            <div class="circle"></div>
+          </div><div class="gap-patch">
+            <div class="circle"></div>
+          </div><div class="circle-clipper right">
+            <div class="circle"></div>
+          </div>
+        </div>
+
+        <div class="spinner-layer spinner-green">
+          <div class="circle-clipper left">
+            <div class="circle"></div>
+          </div><div class="gap-patch">
+            <div class="circle"></div>
+          </div><div class="circle-clipper right">
+            <div class="circle"></div>
+          </div>
+        </div>
+      </div>
+  </div>
+    <!--Import jQuery before materialize.js-->
+    <div class="navbar-fixed">
+    <ul id="dropdown1" class="dropdown-content grey lighten-3 border-dropdown">
+      <li class="sub"><a href="video.html" class="black-text font-bold">Video</a></li>
+      <li class="active sub"><a href="galeria.html" class="black-text font-bold">Galeria</a></li>
+    </ul>
+    <ul id="dropdown2" class="dropdown-content grey lighten-3 border-dropdown">
+      <li class="sub"><a href="historia.html" class="black-text font-bold">Historia</a></li>
+      <li class="sub"><a href="integrantes.html" class="black-text font-bold">Integrantes</a></li>
+    </ul>
+    <nav class="menu menu-principal">
+      <div class="nav-wrapper grey lighten-2 nav-border">
+        <a href="index.html" class="brand-logo black-text font-bold">CARTAGONOVA</a>
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons black-text">menu</i></a>
+        <ul class="right hide-on-med-and-down menu__list">
+          <li class="menu__item"><a class="black-text font-bold menu__link" href="index.html">Inicio</a></li>
+          <li class="menu__item"><a class="black-text font-bold menu__link dropdown-button" href="#!" data-activates="dropdown2">La banda</a></li>
+          <li class="menu__item"><a class="black-text font-bold menu__link dropdown-button" href="#!" data-activates="dropdown1">Media</a></li>
+          <li class="menu__item"><a class="black-text font-bold menu__link" href="letras.html">Letras</a></li>
+          <li class="menu__item"><a class="black-text font-bold menu__link" href="contacto.html">Contacto</a></li>
+        </ul>
+        <ul class="side-nav collapsible" id="mobile-demo">
+          <li><a class="font-bold" href="index.html">Inicio</a></li>
+          <li><a class="font-bold collapsible-header waves-effect waves-red">La banda</a>
+            <div class="collapsible-body">
+              <ul>
+                  <li>
+                    <a class="bold" href="historia.html">Historia</a>
+                  </li>
+                  <li>
+                    <a class="bold" href="integrantes.html">Integrantes</a>
+                  </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a class="font-bold collapsible-header waves-effect waves-red" >Media</a>
+            <div class="collapsible-body">
+              <ul>
+                  <li>
+                    <a class="bold" href="video.html">Video</a>
+                  </li>
+                  <li class="active">
+                    <a class="bold" href="galeria.html">Galeria</a>
+                  </li>
+              </ul>
+            </div>
+          </li>
+          <li><a class="font-bold" href="letras.html">Letras</a></li>
+          <li><a class="font-bold" href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <main>
+    <div class="row">
+      <div class="">
+  				<div class="grid__item fondo-2">
+    				<a class="link link--kumya" href="#"><span data-letters="CARTAGONOVA">CARTAGONOVA</span></a>
+    			</div>
+      </div>
+    </div>
+  </main>
+  <section>
+    <div class="row  fondo-lineal-2">
+      <div class="col s12">
+        <div class="container pd-25">
+          <div class="row waves-effect waves-light banda center">
+            <div class="col s12  center-align">
+              Galeria
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+        <div class="row">
+            <div class="content">
+        			<div class="grid">
+        				<div class="grid__img" data-size="1280x853">
+        					<a href="media/img/Optimizadas/1.jpg" class="media-wrap"><img src="media/img/thumbs/1_resize.jpg" alt="media01" />
+        						<div class="description description--grid">Sebastian</div>
+        					</a>
+        				</div>
+            		<div class="grid__img" data-size="1280x961">
+        					<a href="media/img/Optimizadas/4.jpg" class="media-wrap"><img src="media/img/thumbs/4_resize.jpg" alt="media04" />
+        						<div class="description description--grid">Dario</div>
+        					</a>
+        				</div>
+        				<div class="grid__img" data-size="837x1280">
+        					<a href="media/img/Optimizadas/3.jpg" class="media-wrap"><img src="media/img/thumbs/3_resize.jpg" alt="media03" />
+        						<div class="description description--grid">Diego</div>
+        					</a>
+        				</div>
+        				<div class="grid__img" data-size="1280x1131">
+        					<a href="media/img/Optimizadas/5.jpg" class="media-wrap"><img src="media/img/thumbs/5_resize.jpg" alt="media05" />
+        						<div class="description description--grid">Dario</div>
+        					</a>
+        				</div>
+        				<div class="grid__img" data-size="1280x857">
+        					<a href="media/img/Optimizadas/6.jpg" class="media-wrap"><img src="media/img/thumbs/6_resize.jpg" alt="media06" />
+        						<div class="description description--grid">Diego</div>
+        					</a>
+        				</div>
+        				<div class="grid__img" data-size="1280x1280">
+        					<a href="media/img/Optimizadas/7.jpg" class="media-wrap"><img src="media/img/thumbs/7_resize.jpg" alt="media07" />
+        						<div class="description description--grid">Diego</div>
+        					</a>
+        				</div>
+          			<div class="grid__img" data-size="958x1280">
+        					<a href="media/img/Optimizadas/2.jpg" class="media-wrap"><img src="media/img/thumbs/2_resize.jpg" alt="media02" />
+        						<div class="description description--grid">Sebastian</div>
+        					</a>
+        				</div>
+        				<div class="grid__img" data-size="1280x853">
+        					<a href="media/img/Optimizadas/8.jpg" class="media-wrap"><img src="media/img/thumbs/8_resize.jpg" alt="media08" />
+        						<div class="description description--grid">Mario</div>
+        					</a>
+        				</div>
+        				<div class="grid__img" data-size="865x1280">
+        					<a href="media/img/Optimizadas/9.jpg" class="media-wrap"><img src="media/img/thumbs/9_resize.jpg" alt="media09" />
+        						<div class="description description--grid">Sebastian</div>
+        					</a>
+        				</div>
+        				<div class="grid__img" data-size="1280x1280">
+        					<a href="media/img/Optimizadas/10.jpg" class="media-wrap"><img src="media/img/thumbs/10_resize.jpg" alt="media10" />
+        						<div class="description description--grid">Sebastian</div>
+        					</a>
+        				</div>
+        				<div class="grid__img" data-size="1280x850">
+        					<a href="media/img/Optimizadas/11.jpg" class="media-wrap"><img src="media/img/thumbs/11_resize.jpg" alt="media11" />
+        						<div class="description description--grid">Cartagonova</div>
+        					</a>
+        				</div>
+        				<div class="grid__img" data-size="1280x853">
+        					<a href="media/img/Optimizadas/12.jpg" class="media-wrap"><img src="media/img/thumbs/12_resize.jpg" alt="media01" />
+        						<div class="description description--grid">Cartagonova</div>
+        					</a>
+        				</div>
+        				<div class="grid__img" data-size="958x1280">
+        					<a href="media/img/Optimizadas/13.jpg" class="media-wrap"><img src="media/img/thumbs/13_resize.jpg" alt="media02" />
+        						<div class="description description--grid">Diego</div>
+        					</a>
+        				</div>
+        				<div class="grid__img" data-size="837x1280">
+        					<a href="media/img/Optimizadas/14.jpg" class="media-wrap"><img src="media/img/thumbs/14_resize.jpg" alt="media03" />
+        						<div class="description description--grid">Felicity</div>
+        					</a>
+        				</div>
+        				<div class="grid__img" data-size="1280x961">
+        					<a href="media/img/Optimizadas/15.jpg" class="media-wrap"><img src="media/img/thumbs/15_resize.jpg" alt="media04" />
+        						<div class="description description--grid">Mario</div>
+        					</a>
+        				</div>
+        				<div class="grid__img" data-size="1280x1131">
+        					<a href="media/img/Optimizadas/16.jpg" class="media-wrap"><img src="media/img/thumbs/16_resize.jpg" alt="media05" />
+        						<div class="description description--grid">Mario</div>
+        					</a>
+        				</div>
+        				<div class="grid__img" data-size="1280x857">
+        					<a href="media/img/Optimizadas/17.jpg" class="media-wrap"><img src="media/img/thumbs/17_resize.jpg" alt="media06" />
+        						<div class="description description--grid">Mario</div>
+        					</a>
+        				</div>
+        				<div class="grid__img" data-size="1280x1280">
+        					<a href="media/img/Optimizadas/18.jpg" class="media-wrap"><img src="media/img/thumbs/18_resize.jpg" alt="media07" />
+        						<div class="description description--grid">Dario</div>
+        					</a>
+        				</div>
+        				<div class="grid__img" data-size="1280x853">
+        					<a href="media/img/Optimizadas/19.jpg" class="media-wrap"><img src="media/img/thumbs/19_resize.jpg" alt="media08" />
+        						<div class="description description--grid">Diego</div>
+        					</a>
+        				</div>
+        				<div class="grid__img" data-size="865x1280">
+        					<a href="media/img/Optimizadas/20.jpg" class="media-wrap"><img src="media/img/thumbs/20_resize.jpg" alt="media09" />
+        						<div class="description description--grid">Diego</div>
+        					</a>
+        				</div>
+        				<div class="grid__img" data-size="1280x1280">
+        					<a href="media/img/Optimizadas/21.jpg" class="media-wrap"><img src="media/img/thumbs/21_resize.jpg" alt="media10" />
+        						<div class="description description--grid">Mario</div>
+        					</a>
+        				</div>
+            		<div class="grid__img" data-size="1280x850">
+        					<a href="media/img/Optimizadas/22.jpg" class="media-wrap"><img src="media/img/thumbs/22_resize.jpg" alt="media11" />
+        						<div class="description description--grid">Cartagonova</div>
+        					</a>
+        				</div>
+        				<div class="grid__img" data-size="1280x850">
+        					<a href="media/img/Optimizadas/23.jpg" class="media-wrap"><img src="media/img/thumbs/23_resize.jpg" alt="media11" />
+        						<div class="description description--grid">Cartagonova</div>
+        					</a>
+        				</div>
+                <div class="grid__img" data-size="1280x850">
+        					<a href="media/img/Optimizadas/24.jpg" class="media-wrap"><img src="media/img/thumbs/24_resize.jpg" alt="media11" />
+        						<div class="description description--grid">Cartagonova</div>
+        					</a>
+        				</div>
+                <div class="grid__img" data-size="1280x850">
+        					<a href="media/img/Optimizadas/25.jpg" class="media-wrap"><img src="media/img/thumbs/25_resize.jpg" alt="media11" />
+        						<div class="description description--grid">Mario</div>
+        					</a>
+        				</div>
+                <div class="grid__img" data-size="1280x850">
+        					<a href="media/img/Optimizadas/26.jpg" class="media-wrap"><img src="media/img/thumbs/26_resize.jpg" alt="media11" />
+        						<div class="description description--grid">Dario</div>
+        					</a>
+        				</div>
+                <div class="grid__img" data-size="1280x850">
+        					<a href="media/img/Optimizadas/27.jpg" class="media-wrap"><img src="media/img/thumbs/27_resize.jpg" alt="media11" />
+        						<div class="description description--grid">Mario</div>
+        					</a>
+        				</div>
+                <div class="grid__img" data-size="1280x850">
+        					<a href="media/img/Optimizadas/28.jpg" class="media-wrap"><img src="media/img/thumbs/28_resize.jpg" alt="media11" />
+        						<div class="description description--grid">Mario</div>
+        					</a>
+        				</div>
+                <div class="grid__img" data-size="1280x850">
+        					<a href="media/img/Optimizadas/29.jpg" class="media-wrap"><img src="media/img/thumbs/29_resize.jpg" alt="media11" />
+        						<div class="description description--grid">Dario</div>
+        					</a>
+        				</div>
+                <div class="grid__img" data-size="1280x850">
+        					<a href="media/img/Optimizadas/30.jpg" class="media-wrap"><img src="media/img/thumbs/30_resize.jpg" alt="media11" />
+        						<div class="description description--grid">Dario y Sebas</div>
+        					</a>
+        				</div>
+                <div class="grid__img" data-size="1280x850">
+        					<a href="media/img/Optimizadas/31.jpg" class="media-wrap"><img src="media/img/thumbs/31_resize.jpg" alt="media11" />
+        						<div class="description description--grid">Dario</div>
+        					</a>
+        				</div>
+                <div class="grid__img" data-size="1280x850">
+        					<a href="media/img/Optimizadas/32.jpg" class="media-wrap"><img src="media/img/thumbs/32_resize.jpg" alt="media11" />
+        						<div class="description description--grid">Mario</div>
+        					</a>
+        				</div>
+        			</div>
+        			<!-- /grid -->
+        			<div class="preview">
+        				<button class="action action--close"><i class="fa fa-times"></i><span class="text-hidden">Close</span></button>
+        				<div class="description description--preview"></div>
+        			</div>
+        			<!-- /preview -->
+        		</div>
+  </section>
+<footer class="page-footer black">
+    <div class="container">
+      <div class="row">
+        <div class="col  s12">
+          <h5 class="white-text center bold uppercase element-to-animate" id="siguenos">Siguenos</h5>
+      			<div class="content">
+              <div class="share">
+                <div class="share-wrapper">
+                  <ul class="share-items">
+                    <li class="share-item">
+                      <button class="share-item-button">
+                        <i class="share-item-icon fa fa-twitter"></i>
+                      </button>
+                      <div class="share-item-bounce"></div>
+                    </li>
+                    <li class="share-item">
+                      <button class="share-item-button">
+                        <i class="share-item-icon fa fa-facebook"></i>
+                      </button>
+                      <div class="share-item-bounce"></div>
+                    </li>
+                    <li class="share-item">
+                      <button class="share-item-button">
+                        <i class="share-item-icon fa fa-instagram"></i>
+                      </button>
+                      <div class="share-item-bounce"></div>
+                    </li>
+                  </ul>
+                  <button class="share-toggle-button white">
+                    <i class="fa fa-share-alt share-toggle-icon"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright footer-border">
+      <div class="center-align">
+        Condiciones de uso Política de privacidad Soporte © 2016 Cartagonova ™ Todos los derechos reservados
+      </div>
+    </div>
+  </footer>
+  <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="js/jquery.waypoints.min.js"></script>
+  <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+	<script src="js/anime.min.js"></script>
+  <script src="js/imagesloaded.pkgd.min.js"></script>
+  <script src="js/masonry.pkgd.min.js" type="text/javascript"></script>
+  <script type="text/javascript" src="js/classie.js"></script>
+	<script src="js/galeria.js"></script>
+  <script src="js/TweenMax.min.js"></script>
+  <script type="text/javascript" src="js/menu.js"></script>
+  <script type="text/javascript" src="js/index.js"></script>
+  <script type="text/javascript">
+    (function() {
+      var loader = document.getElementById("preload");
+      var html = document.querySelector("html");
+      html.style.overflowY = 'auto';
+      loader.style.display = 'none';
+			var support = { transitions: Modernizr.csstransitions },
+				// transition end event name
+				transEndEventNames = { 'WebkitTransition': 'webkitTransitionEnd', 'MozTransition': 'transitionend', 'OTransition': 'oTransitionEnd', 'msTransition': 'MSTransitionEnd', 'transition': 'transitionend' },
+				transEndEventName = transEndEventNames[ Modernizr.prefixed( 'transition' ) ],
+				onEndTransition = function( el, callback ) {
+					var onEndCallbackFn = function( ev ) {
+						if( support.transitions ) {
+							if( ev.target != this ) return;
+							this.removeEventListener( transEndEventName, onEndCallbackFn );
+						}
+						if( callback && typeof callback === 'function' ) { callback.call(this); }
+					};
+					if( support.transitions ) {
+						el.addEventListener( transEndEventName, onEndCallbackFn );
+					}
+					else {
+						onEndCallbackFn();
+					}
+				};
+
+			new GridFx(document.querySelector('.grid'), {
+				imgPosition : {
+					x : 1,
+					y : 0.75
+				},
+				pagemargin : 50,
+				onOpenItem : function(instance, item) {
+					instance.items.forEach(function(el) {
+						if(item != el) {
+							var delay = Math.floor(Math.random() * 150);
+							el.style.WebkitTransition = 'opacity .4s ' + delay + 'ms cubic-bezier(.7,0,.3,1), -webkit-transform .4s ' + delay + 'ms cubic-bezier(.7,0,.3,1)';
+							el.style.transition = 'opacity .4s ' + delay + 'ms cubic-bezier(.7,0,.3,1), transform .4s ' + delay + 'ms cubic-bezier(.7,0,.3,1)';
+
+							el.style.WebkitTransform = 'translate3d(0,400px,0)';
+							el.style.transform = 'translate3d(0,400px,0)';
+							el.style.opacity = 0;
+						}
+					});
+				},
+				onCloseItem : function(instance, item) {
+					instance.items.forEach(function(el) {
+						if(item != el) {
+							el.style.WebkitTransition = 'opacity .3s, -webkit-transform .3s';
+							el.style.transition = 'opacity .3s, transform .3s';
+
+							el.style.WebkitTransform = 'translate3d(0,0,0)';
+							el.style.transform = 'translate3d(0,0,0)';
+							el.style.opacity = 1;
+
+							onEndTransition(el, function() {
+								el.style.transition = 'none';
+								el.style.WebkitTransform = 'none';
+							});
+						}
+					});
+				}
+			});
+		})();
+  </script>
+  </body>
+</html>
