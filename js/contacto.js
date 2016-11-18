@@ -27,13 +27,16 @@ function handleAuthClick() {
     immediate: false
   }, handleAuthResult);
   return false;
+
 }
 
 function handleAuthResult(authResult) {
+  console.log(authResult);
   if(authResult && !authResult.error) {
-    console.log("ok");
     loadGmailApi();
   } else {
+    console.log("entroo");
+    $('#modal2').openModal();
     handleAuthClick();
   }
 }
