@@ -90,11 +90,11 @@ $("form").submit(function(event) {
   var form = $(this).serializeArray();
   form.forEach(function(item){
     if (item.name === "nombre") {
-          subject1.Subject = "Cartagonova Contacto";
+          subject2.Subject = "Cartagonova Contacto";
           subject1.To = "info.cartagonovarock@gmail.com";
           mensaje2 = "Hola " + item.value + " Hemos recibido tu mensaje, pronto nos pondremos en contacto contigo.";
     }else if (item.name === "asunto") {
-        subject2.Subject = item.value;
+        subject1.Subject = item.value;
     }else if (item.name === "email") {
         subject2.to = item.value;
     }else if (item.name === "mensaje"){
