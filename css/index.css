@@ -92,6 +92,11 @@ html{
     text-align: justify;
 }
 
+.pa-75-justify {
+    padding: 75px;
+    text-align: justify;
+}
+
 .pd-25{
     padding: 25px;
     display: flex;

@@ -21,7 +21,7 @@ function checkAuth() {
 }
 
 function handleAuthClick() {
-  gapi.auth.authorize({
+  var auth = gapi.auth.authorize({
     client_id: clientId,
     scope: scopes,
     immediate: false
@@ -101,8 +101,8 @@ $("form").submit(function(event) {
         mensaje1 = item.value;
     }
   });
-  sendMessage(subject1, mensaje1, enviado);
-  sendMessage(subject2, mensaje2, gracias);
+  sendMessage(subject1, mensaje1, gracias);
+  //sendMessage(subject2, mensaje2, gracias);
   //event.preventDefault();
   return false;
 });
