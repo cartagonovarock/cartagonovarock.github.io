@@ -89,11 +89,10 @@ $("form").submit(function(event) {
     url: $("form").attr('action'),
     data: formData,
     success: function(response){
-      console.log(response);
       gracias();
     },
     error: function(response){
-      console.log(response);
+      alert(response);
     }
   });
   return false;
