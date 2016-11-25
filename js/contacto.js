@@ -83,33 +83,10 @@ $(".modal-close").click(function(event) {
 //Funcion que toma los datos para enviar
 
 $("form").submit(function(event) {
-  /*var subject1 = {},
-    subject2 = {},
-    mensaje1 = "",
-    mensaje2 = "";
-  /* Act on the event */
-  var form = $(this).serialize();
-  /*form.forEach(function(item){
-    if (item.name === "nombre") {
-          subject2.Subject = "Cartagonova Contacto";
-          subject1.To = "info.cartagonovarock@gmail.com";
-          mensaje2 = "Hola " + item.value + " Hemos recibido tu mensaje, pronto nos pondremos en contacto contigo.";
-    }else if (item.name === "asunto") {
-        subject1.Subject = item.value;
-    }else if (item.name === "email") {
-        subject2.to = item.value;
-    }else if (item.name === "mensaje"){
-        mensaje1 = item.value;
-    }
-  });
-  sendMessage(subject1, mensaje1, gracias);
-  //sendMessage(subject2, mensaje2, gracias);
-  //event.preventDefault();*/
-
-
+  var formData = $(this).serialize();
   $.ajax({
     type: 'POST',
-    url: $(form).attr('action'),
+    url: $("form").attr('action'),
     data: formData,
     success: function(response){
       console.log(response);
