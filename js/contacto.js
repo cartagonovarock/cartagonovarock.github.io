@@ -1,5 +1,6 @@
 //https://developers.google.com/gmail/api/quickstart/js
 //Fuente: https://www.sitepoint.com/sending-emails-gmail-javascript-api/
+/*
 var clientId = "759411052161-9ljnhtachts38s1ive8nodvlbp936b7e.apps.googleusercontent.com";
 var apiKey = "AIzaSyCLMG-re7FbGQ_0u7DSxCpqBPJQqDJfYGE";
 
@@ -63,7 +64,7 @@ function sendMessage(headers_obj, message, callback)
     return sendRequest.execute(callback);
   }
 }
-
+*/
 //Funcion para abrir modal cuando se envie el mensaje
 function gracias(){
   document.getElementById("contacto").reset(); //Limpia los campos del contacto
@@ -82,13 +83,13 @@ $(".modal-close").click(function(event) {
 //Funcion que toma los datos para enviar
 
 $("form").submit(function(event) {
-  var subject1 = {},
+  /*var subject1 = {},
     subject2 = {},
     mensaje1 = "",
     mensaje2 = "";
   /* Act on the event */
-  var form = $(this).serializeArray();
-  form.forEach(function(item){
+  var form = $(this).serialize();
+  /*form.forEach(function(item){
     if (item.name === "nombre") {
           subject2.Subject = "Cartagonova Contacto";
           subject1.To = "info.cartagonovarock@gmail.com";
@@ -103,6 +104,20 @@ $("form").submit(function(event) {
   });
   sendMessage(subject1, mensaje1, gracias);
   //sendMessage(subject2, mensaje2, gracias);
-  //event.preventDefault();
+  //event.preventDefault();*/
+
+
+  $.ajax({
+    type: 'POST',
+    url: $(form).attr('action'),
+    data: formData,
+    success: function(response){
+      console.log(response);
+      gracias();
+    },
+    error: function(response){
+      console.log(response);
+    }
+  });
   return false;
 });
